@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html  dir="ltr" lang="pt" xml:lang="pt" class="no-js">
+    <head>
+    <title>Unidade curricular: {{uc_name}}</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="theme-color" content="#ffffff" />
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="description" content="A plataforma EAD é um site na Internet, propriedade do Politécnico de Leiria (IPLeiria), que fornece recursos e ferramentas de apoio às atividades letivas (presenciais e a distância) da instituição e respetivas unidades orgânicas. Se é um estudante ou docente na instituição, pode iniciar sessão com as suas credenciais do IPLeiria." /><meta name="keywords" content="Plataforma de eLearning, Politécnico de Leiria, EAD, IPLeiria, IPL, Moodle, UED, conteúdos, materiais, ensino a distância, apontamentos, avaliações, atividades letivas, 2017-18, 2017, 2018" />
+    <link rel="icon" type="image/png" sizes="32x32" href="../_modules/favicon/favicon-32x32.png" />
+	<link rel="icon" type="image/png" sizes="16x16" href="../_modules/favicon/favicon-16x16.png" />
+	<link rel="mask-icon" color="#231f20" href="../_modules/favicon/safari-pinned-tab.svg" />
+	<link rel="shortcut icon" href="../_modules/favicon.ico" />
+	<link rel="apple-touch-icon" sizes="180x180" href="../_modules/favicon/apple-touch-icon.png" />
+	<link rel="stylesheet" type="text/css" href="../_modules/css/css.css" />
+	<link rel="stylesheet" type="text/css" href="../_modules/font-awesome/css/font-awesome.min.css" />
+	<link rel="stylesheet" type="text/css" href="../_modules/css/yui-moodlesimple-min.css" />
+	<script id="firstthemesheet" type="text/css">/** Required in order to fix style inclusion problems in IE with YUI **/</script>
+	<link rel="stylesheet" type="text/css" href="../_modules/css/all.css" />
+	
+</head>
+<body>
+	<div id="wrapper">
+		<header id="banner" role="banner">
+			<div id="logo-wrapper">
+				<div class="relative-wrapper">
+					<h1 id="logo">
+						<img src="../_modules/logo.svg" alt="Politécnico de Leiria" width="184" height="52"/>
+					</h1>
+					<a href="#" accesskey="c" id="close-ipleiria-menu" title="Fechar o menu"><span class="icon fa fa-times" aria-hidden="true"></span></a>
+				</div>
+			</div>
+			<div id="header-wrapper" class="page-wrapper">
+				<h2 id="app-name">
+					<span class="app-name-wrapper">
+						<button aria-controls="ipleiria-menu" aria-expanded="false" id="ipleiria-menu-toggle" type="button" title="Mostrar/ocultar o menu"><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span><span class="css-model"></span></button>                            Arquivo de eLearning (2017-18)
+					</span>
+				</h2>
+			</div>
+		</header>
+
+		<div id="content-wrapper">
+			<div class="hidden-print" id="ipleiria-menu">
+				<div id="ipleiria-menu-wrapper">
+					<aside id="block-region-ipleiria-menu" class="ipleiria-blocks-menu block-region" data-blockregion="ipleiria-menu" data-droptarget="1">
+						<div id="inst4" class="block_navigation  block" role="navigation" data-block="navigation" data-instanceid="4" aria-labelledby="instance-4-header">
+							<div class="header">
+								<div class="title">
+									<div class="block_action">
+									</div>
+									<h2 id="instance-4-header">
+										<span class="icon fa fa-compass block_navigation" aria-hidden="true">
+										</span>
+										<span class="block-label">UCs</span>
+									</h2>
+								</div>
+							</div>
+							<div class="content">
+								<ul class="block_tree list" role="tree">
+									<ul id="uclist" role="group">
+										{{uc_list}}
+									</ul>
+								</ul>
+							</div>
+						</div>
+						<span class="skip-block-to" id="sb-2"></span>
+					</aside>
+				</div>
+			</div>
+			<div id="page-wrapper" class="gray-bg page-wrapper">
+				<div class="wrapper wrapper-content animated fadeInRight">
+					<header id="page-header" class="">
+						<div class="page-context-header">
+							<div class="page-header-headings">
+								<h2>Unidade curricular: {{uc_name}}</h2>
+							</div>
+						</div>
+					</header>
+					<div id="page-content" class="container-fluid">
+						<div class="row-fluid">
+							<div id="region-main-box" class="span12">
+								<div id="fill-main">
+									{{uc_content}}
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!--
+				<script type="text/javascript" src="../_modules/js/head.js"></script>
+				<script type="text/javascript" src="../_modules/js/jquery-3.3.1.min.js"></script>
+				<script type="text/javascript">
+				//<![CDATA[
+				var require = {
+					baseUrl : 'https://ead.ipleiria.pt/2017-18/lib/requirejs.php/1529077139/',
+					// We only support AMD modules with an explicit define() statement.
+					enforceDefine: true,
+					skipDataMain: true,
+					waitSeconds : 0,
+
+					paths: {
+						jquery: 'https://ead.ipleiria.pt/2017-18/lib/javascript.php/1529077139/lib/jquery/jquery-3.1.0.min',
+						jqueryprivate: 'https://ead.ipleiria.pt/2017-18/lib/javascript.php/1529077139/lib/requirejs/jquery-private'
+					},
+
+					// Custom jquery config map.
+					map: {
+					  // '*' means all modules will get 'jqueryprivate'
+					  // for their 'jquery' dependency.
+					  '*': { jquery: 'jqueryprivate' },
+
+					  // 'jquery-private' wants the real jQuery module
+					  // though. If this line was not here, there would
+					  // be an unresolvable cyclic dependency.
+					  jqueryprivate: { jquery: 'jquery' }
+					}
+				};
+
+				//]]>
+				</script>
+				<script type="text/javascript" src="https://ead.ipleiria.pt/2017-18/lib/javascript.php/1529077139/lib/requirejs/require.min.js"></script>
+				<script type="text/javascript">
+				//<![CDATA[
+				require(['core/first'], function() {
+					require(["theme_ead/menu"], function(amd) { amd.init({"menuStatePreferenceName":"ipleiria_menu_hidden","stateHidden":"hidden","stateVisible":"visible","menuState":"visible","isAutenticated":true,"menuID":"ipleiria-menu","menuHideClass":"hide-menu","menuShowClass":"show-menu"}); });;
+				});
+				//]]>
+				</script>-->
+			</div>
+		</div>
+	</div>
+    </body>
+</html>
