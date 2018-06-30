@@ -1,13 +1,14 @@
 # eLearning IPLeiria Downloader
 
-# Script ainda em Desenvolvimento! TODO: Download de cada item individual.
+# Script ainda em Desenvolvimento!
+## TODO: Download de cada item individual.
 
 Script em Python que permite transferir para arquivo todo o conteúdo da plataforma de eLearning do IPLeiria. É criado localmente uma cópia com HTML de cada UC e respectivos conteúdos.
 
 ## Screenshots
 
-![Página Inicial](https://raw.githubusercontent.com/rubnogueira/elearning-ipleiria-downloader/images/readme1.png")
-![Página da UC](https://raw.githubusercontent.com/rubnogueira/elearning-ipleiria-downloader/images/readme2.png")
+![Página Inicial](https://raw.githubusercontent.com/rubnogueira/elearning-ipleiria-downloader/master/images/readme1.png)
+![Página da UC](https://raw.githubusercontent.com/rubnogueira/elearning-ipleiria-downloader/master/images/readme2.png)
 
 ## Preparando o Script
 
