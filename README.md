@@ -1,7 +1,7 @@
 # eLearning IPLeiria Downloader
 
-# Script ainda em Desenvolvimento!
-## TODO: Download de cada item individual.
+### Script ainda em Desenvolvimento!
+### TODO: Download de cada item individual.
 
 Script em Python que permite transferir para arquivo todo o conteúdo da plataforma de eLearning do IPLeiria. É criado localmente uma cópia com HTML de cada UC e respectivos conteúdos.
 
